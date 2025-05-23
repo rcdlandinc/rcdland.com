@@ -66,30 +66,34 @@
 </nav>
 
 <!-- About Us Section -->
-<section class="pt-[100px] pl-20 px-4 md:px-10">
-  <div class="flex items-center mb-10 pt-[30px]" style="margin-left: 445px;">
-    <div class="w-1 h-20 bg-green-500 mr-6"></div>
-    <h1 class="text-3xl md:text-4xl font-semibold text-black-600">About Us</h1>
+<section class="pt-[100px] px-2 sm:px-4 md:px-10">
+  <div class="flex items-center mb-6 sm:mb-10 pt-6 sm:pt-[30px] ml-0 md:ml-[200px] lg:ml-[445px]">
+    <div class="w-1 h-8 sm:h-12 md:h-20 bg-green-500 mr-2 sm:mr-4 md:mr-6"></div>
+    <h1 class="text-base sm:text-xl md:text-2xl lg:text-4xl font-semibold text-black-600">About Us</h1>
   </div>
 </section>
 
 <!-- Hero Section -->
-    <div class="relative rounded-xl overflow-hidden mb-16">
-      <img alt="Two people, a man and a woman, looking at blueprints on a table in an office environment with natural light"
-      class="w-full max-w-4xl mx-auto h-[400px] md:h-[500px] object-cover rounded-xl"
-      src="./img/aboutus-src/slide-about-1.jpg"/>
-      <div class="absolute bottom-5 left-[472px] bg-green-500/70 text-black p-6 md:p-8 w-full md:w-[25%] rounded-lg shadow-xl">
-        <h2 class="text-2xl md:text-3xl font-bold leading-tight">
-          Building Quality Homes —<br/>Since 1987
-        </h2>
-        <p class="text-xs md:text-sm mt-2 font-medium text-gray-600">
-          RCD LAND, INC.
-        </p>
-      </div>
-    </div>
+<div class="relative rounded-xl overflow-hidden mb-10 sm:mb-16 px-4 sm:px-8">
+  <img 
+    alt="Two people, a man and a woman, looking at blueprints on a table in an office environment with natural light"
+    class="w-full max-w-full md:max-w-3xl lg:max-w-4xl mx-auto h-32 sm:h-56 md:h-[320px] lg:h-[400px] object-cover rounded-xl"
+    src="./img/aboutus-src/slide-about-1.jpg"/>
+  <div class="absolute bottom-2 sm:bottom-5 left-1/2 -translate-x-1/2 sm:left-[60px] md:left-[220px] lg:left-[472px] sm:-translate-x-0 bg-green-500/70 text-black 
+      p-2 xs:p-3 sm:p-4 md:p-6 lg:p-8 
+      w-[90%] xs:w-[70%] sm:w-[60%] md:w-[38%] lg:w-[25%] 
+      rounded-lg shadow-xl">
+    <h2 class="text-xs xs:text-sm sm:text-lg md:text-2xl lg:text-3xl font-bold leading-tight">
+      Building Quality Homes —<br/>Since 1987
+    </h2>
+    <p class="text-[10px] xs:text-xs sm:text-xs md:text-sm mt-1 sm:mt-2 font-medium text-gray-600">
+      RCD LAND, INC.
+    </p>
+  </div>
+</div>
 
    <!-- About Content Section -->
-   <section class="max-w-4xl mx-auto mt-10 text-gray-700 text-sm leading-relaxed space-y-6">
+   <section class="max-w-4xl mx-auto mt-10 text-gray-700 text-sm leading-relaxed space-y-6 sm:mb-16 px-4 sm:px-8">
    <div class="prose prose-lg text-gray-700">
     <p class="text-justify mb-6">
       A company who grows through achieving your dreams, 
@@ -133,9 +137,9 @@
   </div>
 </section>
 
-    <!-- History Section -->
-    <section class="py-12 bg-white">
-    <div class="flex flex-col md:flex-row max-w-6xl mx-auto px-4 md:px-8 gap-12 items-start">
+<!-- History Section -->
+<section class="py-8 md:py-12 bg-white">
+  <div class="flex flex-col md:flex-row max-w-6xl mx-auto px-2 sm:px-4 md:px-8 gap-8 md:gap-12 items-start">
 
     <!-- Left Image + Caption -->
   <div class="md:w-1/2 flex items-center mt-80 md:mt-55 w-full flex flex-col items-start">
@@ -145,21 +149,16 @@
    </div>
 
     <!-- Right Text Content -->
-  <div class="flex-1 max-w-3xl">
-  <h2 class="mt-24 text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
-    <span>OUR</span>
-    <span class="text-gray-400 ml-2">HISTORY</span>
-  </h2>
-
-  <div class="w-16 h-1 bg-green-700 mb-4"></div>
-
-  <!-- RCD Label Below Heading -->
-  <div class="text-left text-gray-500 font-semibold text-lg md:text-xl mb-8">
-    RCD LAND INC. - Since 1987
-  </div>
-  <div class="w-16 h-1 mb-8"></div>
-
-      <div class="space-y-6 text-gray-700 text-sm text-justify">
+    <div class="flex-1 max-w-3xl mt-8 md:mt-24">
+      <h2 class="text-xl md:text-3xl font-extrabold text-gray-900 mb-2">
+        <span>OUR</span>
+        <span class="text-gray-400 ml-2">HISTORY</span>
+      </h2>
+      <div class="w-16 h-1 bg-green-700 mb-4"></div>
+      <div class="text-left text-gray-500 font-semibold text-base md:text-xl mb-8">
+        RCD LAND INC. - Since 1987
+      </div>
+      <div class="space-y-6 text-gray-700 text-base md:text-lg text-justifysm:mb-16 px-2 sm:px-8">
             <p class="text-sm text-justify">
             The leadership an d success of RCD Land Inc. roots from a humble beginning. 
             Our founder, Roland C. Delantar, was just a simple man from Leyte who had big
@@ -212,14 +211,15 @@
       </div>
     </section>
   
-   <body class="bg-white text-gray-700">
-   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-   <div class="flex flex-col md:flex-row md:items-start md:space-x-16">
-    <div class="flex-shrink-0 mb-10 md:mb-0 md:w-1/3">
-     <img alt="RCD Group logo with two yellow houses and sun rays behind, text 'RCD GROUP Improving Lives RCD LAND, INC. BUILDING QUALITY HOMES SINCE 1987' on a yellowish background" 
-     class="w-full h-auto object-contain" height="500" src="./img/aboutus-src/rcd-vision-mission.jpg" width="500"/>
+<!-- Vision & Mission Section -->
+<div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8 py-10 md:py-16">
+  <div class="flex flex-col md:flex-row md:items-start md:space-x-10">
+    <div class="flex-shrink-0 mb-8 md:mb-0 md:w-1/3">
+      <img alt="RCD Group logo..." 
+        class="w-full h-auto object-contain max-h-[300px] md:max-h-[500px]"
+        src="./img/aboutus-src/rcd-vision-mission.jpg"/>
     </div>
-    <div class="md:w-2/3 space-y-12">
+    <div class="md:w-2/3 space-y-8 md:space-y-12">
      <section>
       <h2 class="text-2xl font-extrabold text-black">
        OUR
@@ -258,15 +258,16 @@
    </div>
   </div>
 
-<main class="py-16 bg-white">
-  <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-2xl font-semibold mb-10">
+<!-- Main Undertakings Section -->
+<main class="py-10 md:py-16 bg-white">
+  <div class="max-w-5xl mx-auto px-2 sm:px-6">
+    <h2 class="text-xl md:text-2xl font-semibold mb-8 md:mb-10">
       Our three main undertakings:
     </h2>
-     <section class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-20">
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 mb-10 md:mb-20">
       <!-- ...each article unchanged, just update classes as shown... -->
       <article class="text-center">
-        <div class="inline-flex border-4 border-yellow-400 p-10 mb-4 justify-center items-center text-black-500">
+        <div class="inline-flex border-4 border-yellow-400 p-10 mb-4 justify-center items-center text-black-500 rounded-xl">>
           <i class="fas fa-home text-6xl"></i>
         </div>
         <h3 class="text-lg md:text-xl font-extrabold leading-tight">
@@ -278,7 +279,7 @@
       </article>
       <!-- ...repeat for other articles... -->
       <article class="text-center">
-        <div class="inline-flex border-4 border-yellow-400 p-10 mb-4 justify-center items-center text-black-500">
+        <div class="inline-flex border-4 border-yellow-400 p-10 mb-4 justify-center items-center text-black-500 rounded-xl">
           <i class="fas fa-check-square text-6xl"></i>
         </div>
         <h3 class="text-lg md:text-xl font-extrabold leading-tight">
@@ -289,7 +290,7 @@
         </p>
       </article>
       <article class="text-center">
-        <div class="inline-flex border-4 border-yellow-400 p-10 mb-4 justify-center items-center text-black-500">
+        <div class="inline-flex border-4 border-yellow-400 p-10 mb-4 justify-center items-center text-black-500 rounded-xl">
           <i class="fas fa-key text-6xl"></i>
         </div>
         <h3 class="text-lg md:text-xl font-extrabold leading-tight">
@@ -304,18 +305,19 @@
 </main>
 
 <!-- Core Values Section -->
-<section class="text-center mx-auto">
-  <h2 class="text-2xl md:text-4xl font-semibold mb-6">
+<section class="text-center mx-auto px-2">
+  <h2 class="text-xl md:text-4xl font-semibold mb-4 md:mb-6">
     Our Core Values
   </h2>
-  <p class="text-xs md:text-sm text-gray-600 mb-16 px-4 max-w-4xl mx-auto">
+  <p class="text-xs md:text-sm text-gray-600 mb-8 md:mb-16 px-2 md:px-4 max-w-4xl mx-auto">
     At the heart of our company are four essential values that define who we are and guide everything we do.
     These values form the foundation of our culture and fuel our commitment to serving the Filipino people.
     Represented by the acronym HOPE, they reflect our dedication to:
- </section>
+  </p>
+</section>
 
-<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<section class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8 md:py-16">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
     <!-- HONESTY -->
     <div>
       <div class="mx-auto w-28 h-28 md:w-40 md:h-40 rounded-full flex items-center justify-center mb-4 md:mb-6">
@@ -360,26 +362,26 @@
 </section>
 
 <!-- Awards Section -->
-<main class="max-w-7xl mx-auto px-4 py-12">
-  <h2 class="text-center text-black font-semibold text-4xl mb-12 select-none">
+<main class="max-w-7xl mx-auto px-2 sm:px-4 py-8 md:py-12">
+  <h2 class="text-center text-black font-semibold text-2xl md:text-4xl mb-8 md:mb-12 select-none">
     AWARDS
   </h2>
-  <div class="flex flex-nowrap justify-center items-center gap-x-20">
-    <img alt="Asia CEO Awards 2018 logo with gold text and map on black background" 
-      class="object-contain" 
-      style="width: 200px; height: 200px;" 
+  <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-8">
+    <img alt="Asia CEO Awards 2018 logo..." 
+      class="object-contain"
+      style="width: 160px; height: 160px;" 
       src="./img/aboutus-src/asia ceo.jpg" />
-    <img alt="APEA Asia Pacific Entrepreneurship Awards gold logo with hand and circular design on white background" 
-      class="object-contain" 
-      style="width: 200px; height: 200px;" 
+    <img alt="APEA Asia Pacific Entrepreneurship Awards..." 
+      class="object-contain"
+      style="width: 160px; height: 160px;" 
       src="./img/aboutus-src/apea.png" />
-    <img alt="EY Entrepreneur Of The Year 2015 Finalist logo in gray on white background" 
-      class="object-contain" 
-      style="width: 200px; height: 200px;" 
+    <img alt="EY Entrepreneur Of The Year 2015 Finalist..." 
+      class="object-contain"
+      style="width: 160px; height: 160px;" 
       src="./img/aboutus-src/ey.png" />
-    <img alt="Subdivision & Housing Developers Association, Inc. SHDA green logo with text on white background" 
-      class="object-contain" 
-      style="width: 200px; height: 200px;" 
+    <img alt="Subdivision & Housing Developers Association..." 
+      class="object-contain"
+      style="width: 160px; height: 160px;" 
       src="./img/aboutus-src/shda.png" />
   </div>
 </main>
