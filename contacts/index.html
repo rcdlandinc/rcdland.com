@@ -304,12 +304,8 @@ permalink: /contacts/
       <!-- Adjusted office card row with responsive map -->
       <div class="office-directory mt-8">
         {% for office in site.data.contacts.offices %}
-        <div class="branch-card-row {% if forloop.index0 | modulo: 2 == 1 %} reverse {% endif %}">
-          <div class="property-image map-wrapper">
-            <iframe src="{{ office.map }}" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-          </div>
+          {% assign odd = forloop.index0 | modulo: 2 %}
+        <div class="branch-card-row {% if odd == 1 %} reverse {% endif %}">
           <div class="property-info">
             <h3 class="m-0">{{ office.name }}</h3>
             <p class="mb-1">{{ office.address }}</p>
@@ -338,57 +334,12 @@ permalink: /contacts/
               <p class="leading-tight">{{ office.weekends }}</p>
               {% endif %}
             </div>
-
+          </div>
+          <div class="property-image map-wrapper">
+            <iframe src="{{ office.map }}" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
           </div>
         </div>
         {% endfor %}
       </div>
-
-      <script>
-        function openModal(type) {
-          const modal = document.getElementById('modal');
-          const content = document.getElementById('modal-content');
-          let html = '';
-          if (type === 'help') {
-            html = `<h3 class="text-lg font-bold mb-2">Get help using Typeform</h3>
-      <form>
-        <input class="border p-2 w-full mb-2" placeholder="Your Name" required>
-        <input class="border p-2 w-full mb-2" placeholder="Your Email" type="email" required>
-        <textarea class="border p-2 w-full mb-2" placeholder="How can we help you?" required></textarea>
-        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Send</button>
-      </form>`;
-          } else if (type === 'sales') {
-            html = `<h3 class="text-lg font-bold mb-2">Contact Sales Team</h3>
-      <form>
-        <input class="border p-2 w-full mb-2" placeholder="Your Name" required>
-        <input class="border p-2 w-full mb-2" placeholder="Your Email" type="email" required>
-        <input class="border p-2 w-full mb-2" placeholder="Company Name">
-        <textarea class="border p-2 w-full mb-2" placeholder="Your Inquiry" required></textarea>
-        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Send</button>
-      </form>`;
-          } else if (type === 'billing') {
-            html = `<h3 class="text-lg font-bold mb-2">Contact Billing Team</h3>
-      <form>
-        <input class="border p-2 w-full mb-2" placeholder="Your Name" required>
-        <input class="border p-2 w-full mb-2" placeholder="Your Email" type="email" required>
-        <input class="border p-2 w-full mb-2" placeholder="Invoice Number">
-        <textarea class="border p-2 w-full mb-2" placeholder="Billing Concern" required></textarea>
-        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Send</button>
-      </form>`;
-          } else if (type === 'marketing') {
-            html = `<h3 class="text-lg font-bold mb-2">Contact Marketing & PR</h3>
-      <form>
-        <input class="border p-2 w-full mb-2" placeholder="Your Name" required>
-        <input class="border p-2 w-full mb-2" placeholder="Your Email" type="email" required>
-        <input class="border p-2 w-full mb-2" placeholder="Company/Organization">
-        <textarea class="border p-2 w-full mb-2" placeholder="Your Message" required></textarea>
-        <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded">Send</button>
-      </form>`;
-          }
-          content.innerHTML = html;
-          modal.classList.remove('hidden');
-        }
-        function closeModal() {
-          document.getElementById('modal').classList.add('hidden');
-        }
-      </script>
