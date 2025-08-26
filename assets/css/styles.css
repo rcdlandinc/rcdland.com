@@ -131,7 +131,7 @@
 
     /* Parallax background */
     .parallax-1 {
-      background-image: url(../../assets/img/parallax-bg/phase4-sideview.jpg);
+      background-image: url(../../assets/img/parallax-bg/phase4-sideview.avif);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -141,7 +141,7 @@
     }
 
     .parallax-2 {
-      background-image: url(../../assets/img/parallax-bg/rrh-balayan.jpg);
+      background-image: url(../../assets/img/parallax-bg/rrh-balayan.avif);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -151,7 +151,7 @@
     }
 
     .parallax-3 {
-      background-image: url(../../assets/img/parallax-bg/bf-townhomes-2.jpg);
+      background-image: url(../../assets/img/parallax-bg/bf-townhomes-2.avif);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -161,7 +161,7 @@
     }
 
     .parallax-4 {
-      background-image: url(../../assets/img/parallax-bg/wbh-minuyan.jpg);
+      background-image: url(../../assets/img/parallax-bg/wbh-minuyan.avif);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
@@ -171,7 +171,7 @@
     }
 
     .parallax-5 {
-      background-image: url(../../assets/img/parallax-bg/wbh-cavite.jpg);
+      background-image: url(../../assets/img/parallax-bg/wbh-cavite.avif);
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
